@@ -1,6 +1,6 @@
-# event-handling-system
+# Product-handling-system
 
-A responsive web-based Event Handling System built using **HTML**, **CSS**, **JavaScript**, **Bootstrap**, **PHP**, and **MySQL**. This project allows users to view and manage events with proper CRUD functionality and modern UI components.
+A responsive web-based Product Handling System built using **HTML**, **CSS**, **JavaScript**, **Bootstrap**, **PHP**, and **MySQL**. This project allows users to view and manage events with proper CRUD functionality and modern UI components.
 
 ---
 
@@ -22,7 +22,7 @@ A responsive web-based Event Handling System built using **HTML**, **CSS**, **Ja
 | Frontend       | HTML, CSS, JavaScript, Bootstrap     |
 | Backend        | PHP                                  |
 | Database       | MySQL                                |
-| Dev Tools      | VS Code, XAMPP, Git, GitHub, Postman |
+| Dev Tools      | VS Code, XAMPP, Git, GitHub |
 
 ---
 
