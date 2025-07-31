@@ -1,0 +1,236 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffe6f0;
+  margin: 0;
+  padding: 20px;
+}
+
+.product-wrapper {
+  max-width: 900px;
+  margin: auto;
+  background: #fff0f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px pink;
+}
+
+.product-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.product-form-container input,
+.product-form-container textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.product-form-container button {
+  padding: 10px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.product-form-container button:hover {
+  background-color: #ff1493;
+}
+
+.table-container {
+  margin-top: 30px;
+  overflow-x: auto; 
+}
+
+.product-list-heading {
+  position: sticky;
+  top: 0;
+  background-color: #fff0f5;
+  z-index: 10;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  color: #cc0066;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 2px solid #cc0066;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* Forces scroll on small screens */
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-table img {
+  border-radius: 5px;
+}
+
+.btn-update,
+.btn-delete {
+  padding: 6px 10px;
+  margin: 2px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-update {
+  background-color: #4CAF50;
+}
+
+.btn-delete {
+  background-color: #f44336;
+}
+
+.total-section {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.checkout-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #800080;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.checkout-btn:hover {
+  background-color: #9932cc;
+}
+/* Responsive design starts here */
+@media screen and (max-width: 768px) {
+  .product-wrapper {
+    padding: 15px;
+  }
+
+  .product-form-container {
+    padding: 15px;
+    gap: 8px;
+  }
+
+  .product-form-container input,
+  .product-form-container textarea {
+    font-size: 16px;
+  }
+
+  .product-form-container button {
+    width: 100%;
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+
+  .product-table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .product-table th,
+  .product-table td {
+    padding: 8px;
+  }
+  .product-table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.btn-update,
+.btn-delete {
+  padding: 6px 12px;
+  margin: 2px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-update {
+  background-color: #28a745;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+}
+
+a.btn-update,
+a.btn-delete {
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+  .checkout-btn {
+    width: 100%;
+  }
+
+  .total-section {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product-form-container h2,
+  .product-list-heading,
+  .total-section h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .product-form-container input,
+  .product-form-container textarea {
+    font-size: 15px;
+  }
+
+  .product-form-container textarea {
+    height: 100px;
+  }
+
+  .product-table th,
+  .product-table td {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .product-table img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .btn-update,
+  .btn-delete {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+ .product-list-heading,
+  .total-section {
+    position: sticky;
+    background-color: #fff0f5;
+    z-index: 10;
+    width: auto;
+  }
+}

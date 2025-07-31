@@ -1,0 +1,280 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.estimate-wrapper {
+  background: #fff;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  height: 90px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.contact-info {
+  font-size: 14px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.contact-info span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.contact-info img {
+  width: 20px;
+  height: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #ff1493;
+  margin: 0 0 25px;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 20;
+  padding: 10px 0;
+}
+
+.client-info {
+  font-size: 16px;
+  color: black;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.client-info .row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 5px 0;
+  flex-wrap: wrap;
+}
+
+.client-info .row p {
+  margin: 0;
+}
+
+.scroll-container {
+  margin-top: 20px;
+}
+
+.scrollable-table-wrapper {
+  overflow-x: auto;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #ff66b2;
+  color: white;
+}
+
+td img {
+  max-width: 60px;
+  height: auto;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+table tr:hover {
+  background-color: #f9fbff;
+}
+
+.total-section {
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+  z-index: 20;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+  border-top: 1px solid #ccc;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #ff6aa0;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn:hover {
+  background-color: #e8558a;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .client-info .row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  table, th, td {
+    font-size: 14px;
+  }
+
+  .total-section {
+    font-size: 16px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    height: 70px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .client-info {
+    font-size: 14px;
+  }
+
+  table, th, td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  td img {
+    max-width: 50px;
+  }
+
+  .total-section {
+    font-size: 15px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  table, th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+
+  td img {
+    width: 60px;
+  }
+}
+
+/* Wrapper to allow horizontal scroll on small screens */
+.scrollable-table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styles */
+.styled-table {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: collapse;
+  background-color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+}
+
+/* Table header */
+.styled-table thead tr {
+  background-color: #4CAF50;
+  color: white;
+  text-align: left;
+}
+
+/* Table cells */
+.styled-table th, 
+.styled-table td {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Zebra stripes */
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover effect */
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive font and padding for mobile */
+@media screen and (max-width: 768px) {
+  .styled-table {
+    font-size: 14px;
+  }
+
+  .styled-table th,
+  .styled-table td {
+    padding: 10px;
+    white-space: nowrap;
+  }
+}

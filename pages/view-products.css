@@ -1,0 +1,175 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffe6f0;
+  margin: 0;
+  padding: 20px;
+}
+
+.product-wrapper {
+  max-width: 950px;
+  margin: auto;
+  background: #fff0f5;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 192, 203, 0.6);
+}
+
+.product-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.product-form-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.checkout-btn {
+  padding: 10px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background-color: #ff1493;
+}
+
+.table-container {
+  margin-top: 30px;
+  overflow-x: auto; /* Key for horizontal scroll on small screens */
+}
+
+.product-list-heading {
+  position: sticky;
+  top: 0;
+  background-color: #fff0f5;
+  z-index: 10;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  color: #cc0066;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 2px solid #cc0066;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* Forces scroll on small screens */
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-table img {
+  border-radius: 5px;
+}
+
+.btn-update,
+.btn-delete {
+  padding: 6px 12px;
+  margin: 2px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-update {
+  background-color: #28a745;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+}
+
+a.btn-update,
+a.btn-delete {
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+.table-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-height: 70vh; /* or use any fixed height */
+  overflow: hidden;
+}
+
+.table-scroll-section {
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+
+.total-section {
+  position: sticky;
+  bottom: 0;
+  background-color: #fff0f5;
+  padding: 10px;
+  text-align: right;
+  font-weight: bold;
+  z-index: 10;
+}
+
+/* ✅ Responsive Styles */
+@media screen and (max-width: 480px) {
+  .product-form-container h2,
+  .product-list-heading,
+  .total-section h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .product-form-container input,
+  .product-form-container textarea {
+    font-size: 15px;
+  }
+
+  .product-form-container textarea {
+    height: 100px;
+  }
+
+  .product-table th,
+  .product-table td {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .product-table img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .btn-update,
+  .btn-delete {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+ .product-list-heading,
+  .total-section {
+    position: sticky;
+    background-color: #fff0f5;
+    z-index: 10;
+    width: auto;
+  }
+}
